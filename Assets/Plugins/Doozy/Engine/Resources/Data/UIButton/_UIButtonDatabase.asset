@@ -17,6 +17,10 @@ MonoBehaviour:
   - Custom
   - Example
   - General
+  - Main Menu
+  - In-Game
   Categories:
   - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
   - {fileID: 11400000, guid: 99e760102bddd724fa2ef08944f77c13, type: 2}
+  - {fileID: 11400000, guid: 0051e07abb0aad2469e30ac66e12e9b3, type: 2}
+  - {fileID: 11400000, guid: f3b42243a44df32409001dca8770cd7b, type: 2}
