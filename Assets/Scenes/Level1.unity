@@ -11007,8 +11007,8 @@ Camera:
   m_GameObject: {fileID: 1588159521}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.039215688, g: 0.054901965, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -11251,11 +11251,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6211671602191629542, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
-        type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1004448952}
     - target: {fileID: 6211671602191629565, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
         type: 3}
       propertyPath: m_Name
