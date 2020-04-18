@@ -279,7 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walls: {fileID: 777526922}
   cave: {fileID: 663968341}
-  is2D: 1
+  is2D: 0
 --- !u!1 &631091595
 GameObject:
   m_ObjectHideFlags: 0
