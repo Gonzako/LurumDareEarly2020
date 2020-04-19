@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6211671601422510785}
   - component: {fileID: 6211671601422510784}
+  - component: {fileID: 1842954509}
   m_Layer: 10
   m_Name: Point Light
   m_TagString: Untagged
@@ -125,7 +126,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.98039216, g: 0.50801647, b: 0, a: 1}
   m_Intensity: 1
-  m_Range: 20
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -173,6 +174,23 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1842954509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6211671601422510791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06322381c6f95d4aaf1f6d82224d83c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWait: 2
+  onTorchLightUp: {fileID: 11400000, guid: 81c1c37147ecdc9498729c8cfb92665c, type: 2}
+  startRange: 13
+  minMaxRange: {x: 5, y: 10}
+  minMaxTime: {x: 0.2, y: 3}
 --- !u!1 &6211671602191629565
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,8 +343,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
-  castRadious: 0.4
-  downDistance: 0.61
+  castRadious: 0.45
+  downDistance: 0.6
   coyoteTime: 0.05
   coyoteBool: 1
   onGroundTouched: {fileID: 11400000, guid: 40ee3a0accb5c5840a7db4832d8993d9, type: 2}
@@ -411,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4859880167833556, guid: 6f672a31584a6a748912a49c1dce2f0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.115
+      value: -0.103
       objectReference: {fileID: 0}
     - target: {fileID: 4859880167833556, guid: 6f672a31584a6a748912a49c1dce2f0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -477,7 +495,7 @@ PrefabInstance:
     - target: {fileID: 198938402097657526, guid: 6f672a31584a6a748912a49c1dce2f0c,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.47
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 198938402097657526, guid: 6f672a31584a6a748912a49c1dce2f0c,
         type: 3}
@@ -508,6 +526,16 @@ PrefabInstance:
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.ctime1
       value: 64957
+      objectReference: {fileID: 0}
+    - target: {fileID: 198938402097657526, guid: 6f672a31584a6a748912a49c1dce2f0c,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198938402097657526, guid: 6f672a31584a6a748912a49c1dce2f0c,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minScalar
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 198956070365097430, guid: 6f672a31584a6a748912a49c1dce2f0c,
         type: 3}
