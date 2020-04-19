@@ -2136,6 +2136,11 @@ PrefabInstance:
       propertyPath: upParav.peakDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6211671602191629560, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 6211671602191629565, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
         type: 3}
       propertyPath: m_Name
