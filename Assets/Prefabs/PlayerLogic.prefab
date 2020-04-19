@@ -126,7 +126,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.98039216, g: 0.50801647, b: 0, a: 1}
   m_Intensity: 1
-  m_Range: 5
+  m_Range: 0
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 6211671602191629540}
   - component: {fileID: 6211671602191629541}
   - component: {fileID: 6211671602191629542}
+  - component: {fileID: 93866382}
   m_Layer: 0
   m_Name: PlayerLogic
   m_TagString: Untagged
@@ -321,7 +322,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6211671602191629565}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f710584a715e488448b0265dafc85f4e, type: 3}
   m_Name: 
@@ -335,7 +336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6211671602191629565}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0297ba51615d1e140a5e9f1f2d7a6e91, type: 3}
   m_Name: 
@@ -355,7 +356,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6211671602191629565}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df8282c8bf59a8a47b60d5c374cdbbfe, type: 3}
   m_Name: 
@@ -364,11 +365,11 @@ MonoBehaviour:
   peakEvent: {fileID: 11400000, guid: cd1891d88d40c9f459f7b1b07c013f15, type: 2}
   upParav:
     jumpHeight: 4
-    peakDistance: 1.5
+    peakDistance: 3
     velocityScale: 1
   fallParav:
     jumpHeight: 5
-    peakDistance: 1.5
+    peakDistance: 2
     velocityScale: 1
 --- !u!114 &6211671602191629542
 MonoBehaviour:
@@ -403,6 +404,62 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &93866382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6211671602191629565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeveloperDescription:
+    _value: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 81c1c37147ecdc9498729c8cfb92665c,
+    type: 2}
+  _event: {fileID: 11400000, guid: 81c1c37147ecdc9498729c8cfb92665c, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6211671602191629541}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6211671602191629540}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6211671602191629562}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1001 &179331164679047531
 PrefabInstance:
