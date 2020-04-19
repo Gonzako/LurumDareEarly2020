@@ -486,8 +486,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.103773594, g: 0.10250878, b: 0.09936811, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.13207549, g: 0.09969748, b: 0.01059096, a: 1}
+  m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1760,12 +1760,12 @@ PrefabInstance:
     - target: {fileID: 6211671602191629540, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
         type: 3}
       propertyPath: castRadious
-      value: 0.49
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 6211671602191629540, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
         type: 3}
       propertyPath: downDistance
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6211671602191629565, guid: 06f5c782d51c16e4bb0b99a0af58ce2b,
         type: 3}
