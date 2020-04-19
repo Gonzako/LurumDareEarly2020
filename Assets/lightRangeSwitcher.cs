@@ -30,7 +30,8 @@ public class lightRangeSwitcher : MonoBehaviour
         while (true)
         {
             yield return new WaitUntil(()=>!t.IsPlaying());
-            t = DOTween.To(() => light.range, x => light.range = x, Random.Range(minMaxRange.x, minMaxRange.y), Random.Range(minMaxTime.x, minMaxTime.y));
+            t = DOTween.To(() => light.range, x => light.range = x,
+                Random.Range(minMaxRange.x, minMaxRange.y), Random.Range(minMaxTime.x, minMaxTime.y));
             t.Play();
         }
     }
