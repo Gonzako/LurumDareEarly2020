@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
-using System.IO;
+using System.IO; 
+#endif
 
 public class MeshGenerator : MonoBehaviour {
 
@@ -58,10 +60,12 @@ public class MeshGenerator : MonoBehaviour {
 		} else {
 			CreateWallMesh ();
 		}
+#if UNITY_EDITOR
 
 		string path = FileUtil.GetProjectRelativePath((Application.dataPath + "/GeneratedMesh.asset"));
 		AssetDatabase.CreateAsset(mesh, path);
-		AssetDatabase.SaveAssets();
+		AssetDatabase.SaveAssets(); 
+#endif
 
 	}
 
